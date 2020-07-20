@@ -39,3 +39,6 @@ debug information.
 
 ### `'RGENGC_CHECK_MODE`
 
+This checks the internal state of the GC at various points (and is basically the
+only way to trigger the `gc_check_internal_consistency` function)
+

@@ -2,10 +2,12 @@
 
 ## Index
 
+* [[Current_TODO_List]]
+
 ### Hacking MRI
 
-* [[vscode_mri]]
 * [[building_ruby]]
+* [[vscode_mri]]
 * [[gc_debug]]
 * [[memory]]
 * [[useful_macros]]

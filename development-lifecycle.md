@@ -21,6 +21,14 @@ You can run a single test file with
 make test-all TESTS=/path/to/test/file.rb
 ```
 
+## Running a specific test and attaching `lldb`
+
+```
+make test-all TESTS='test/ruby/test_gc_compact.rb -n test_complex_hash_keys' RUNRUBYOPT=--debugger=lldb
+```
+
+Then when you get the `lldb` prompt type `process launch` to start debugging
+
 ## Running arbitrary scripts
 
 Useful for running small changes that you want to run with your miniruby or
