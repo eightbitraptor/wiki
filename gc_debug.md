@@ -42,3 +42,13 @@ debug information.
 This checks the internal state of the GC at various points (and is basically the
 only way to trigger the `gc_check_internal_consistency` function)
 
+### Notes on current bug (21/07/2020)
+
+gc.c: 6332
+
+data.live_object_count is the analysis of the heap. we walk all the heap pages counting which ones are live (side note, objects with finalizers are treated seperately because we can't guarantee whether they're free or live or what yet)
+
+objspace_live_slots: this is the cached values in the gc objspace of what's been allocated and deallocated,
+
+These things should always be the same.
+
