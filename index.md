@@ -12,6 +12,7 @@ Programming Language](https://www.ruby-lang.org)
 * Get the source and configure your build environment: [[building-ruby]]
 * Configure VSCode for editing, building and debugging Ruby:
   [[setting-up-vscode-for-mri]]
+* Run the MRI tests [[running-tests]]
 * Run the Debugger, set breakpoints and trace paths through the interpreter:
   [[debugging]]
 * Use specific debugging techniques to inspect the Garbage collector:
@@ -29,6 +30,7 @@ Programming Language](https://www.ruby-lang.org)
 [current-todo-list]: current-todo-list "Current Todo List"
 [building-ruby]: building-ruby "Building Ruby"
 [setting-up-vscode-for-mri]: setting-up-vscode-for-mri "Setting up VSCode for MRI development"
+[running-tests]: running-tests "Running Tests"
 [debugging]: debugging "Debugging"
 [debugging-ruby-gc]: debugging-ruby-gc "Debugging Ruby GC"
 [ruby-object-lifecycle]: ruby-object-lifecycle "Ruby Object/GC Lifecycle"
