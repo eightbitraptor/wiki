@@ -18,8 +18,17 @@ You can run your `test.rb` with inside `lldb`. This will dump you inside an
 `lldb` repl. If you want to integrate this with the VSCode debugger see
 [[setting-up-vscode-for-mri]].
 
-- To run `lldb ./miniruby -- test.rb` use `make lldb`
-- To run `lldb ./ruby -- test.rb` use `make lldb-ruby`
+- To run `lldb` against `miniruby` using `test.rb` use
+
+```
+make lldb
+```
+
+- To run `lldb` against `ruby` using `test.rb` use
+
+```
+make lldb-ruby
+```
 
 ## Running a specific test and attaching `lldb`
 
