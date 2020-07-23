@@ -8,11 +8,14 @@
   at a laptop screen any more.
 
   First world problems though. The bezel on modern monitors is so small there's
-  nowhere to put a webcam without obscuring some part of the screen! 
-  
+  nowhere to put a webcam without obscuring some part of the screen!
+
   I know, cry me a river.
 
-- I bought a new pot for brewing beer in. After much hand wringing I finally settled on the cheap and cheerful option which was a 20L stainless steel stock pot from eBay. It cost all of £30 and is so thin that the base pops and bends when there's a decent amount of liquid in it.
+- I bought a new pot for brewing beer in. After much hand wringing I finally
+  settled on the cheap and cheerful option which was a 20L stainless steel stock
+  pot from eBay. It cost all of £30 and is so thin that the base pops and bends
+  when there's a decent amount of liquid in it.
 
   That being said it does the job admirably, the handles are riveted on
   well which is important when you're moving around large quantities of boiling
@@ -31,6 +34,17 @@
 
   And I also set fire to a tea towel. Don't ask.
 
-- I've been using [Foam](foambubble.github.com) at work to try and document all the new stuff I'm learning about developing on MRI.
+- I've been using [Foam](foambubble.github.com) at work to try and document all
+  the new stuff I'm learning about developing on MRI. I really enjoy using it,
+  it's small enough to learn and then let me focus on what I'm writing and the
+  graph view is a fantastic way of identifying topical clumps of knowledge, or
+  identify when your documents are orphaned.
+
+  I published the repository to github pages, as it's Jekyll compatible, which
+  you already know if you're reading this, because these notes are part of it.
+
+  I am honestly contemplating just pushing this up to
+  [www.eightbitraptor.com](https://www.eightbitraptor.com) and having it be my
+  whole website from now on. It is very easy to manage content with.
 
 
