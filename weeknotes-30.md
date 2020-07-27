@@ -1,5 +1,8 @@
 # Weeknotes 30
 
+- I wrote some weeknotes. Felt like an acheivement, no idea if I can keep this
+  up. Also I am very boring.
+
 - My monitor went bang last week, so I've been working on my laptop screen
   propped up on a pile of books. Work arranged for me to have a new monitor
   which arrived on Tuesday. They sent me an upgrade - it's a couple of inches
@@ -47,4 +50,6 @@
   [www.eightbitraptor.com](https://www.eightbitraptor.com) and having it be my
   whole website from now on. It is very easy to manage content with.
 
-
+- We finally finished cladding the insulating the shed, and managed to get the
+  first coat of paint on. I feel like we're on the home strait, even though
+  there's actually loads left to do.
