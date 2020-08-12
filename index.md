@@ -53,6 +53,7 @@ Programming Language](https://www.ruby-lang.org)
 [ruby-object-lifecycle]: ruby-object-lifecycle "Ruby Object/GC Lifecycle"
 [useful-macros]: useful-macros "Useful Macros"
 [working-with-core-dumps]: working-with-core-dumps "Working with Core Dumps"
+[profiling]: profiling "Profiling"
 [ruby-hacking-guide-notes]: ruby-hacking-guide-notes "Ruby Hacking Guide Notes"
 [lldb-tips]: lldb-tips "Lldb Tips"
 [vim-tags-and-navigation]: vim-tags-and-navigation "Vim Tags and Navigation"

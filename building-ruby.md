@@ -42,7 +42,7 @@ begin
   set -lx debugflags '-g'
   set -lx optflags '-O0'
   set -lx RUBY_DEVEL 'yes'
-  ./configure --prefix=/Users/aaron/.rubies/ruby-trunk --disable-install-doc --with-openssl-dir=(brew --prefix)/opt/openssl
+  ../ruby/configure --prefix=~../install --disable-install-doc --with-openssl-dir=(brew --prefix)/opt/openssl
 end
 ```
 
@@ -57,7 +57,8 @@ included gems it always builds with:
 * `RUBY_DEVEL` enabled - I don't actually know what this does yet.
 
 It's also possible to compile without this and then edit the generated
-`Makefile`, but this doesn't apply these to any gems that are built - just the main `miniruby` and `ruby` binaries. Which can be a pain.
+`Makefile`, but this doesn't apply these to any gems that are built - just the
+main `miniruby` and `ruby` binaries. Which can be a pain.
 
 ## Building and installing
 
