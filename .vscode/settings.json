@@ -3,7 +3,7 @@
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Material Theme Ocean",
   "[markdown]": {
     "editor.quickSuggestions": true
   },
