@@ -1,5 +1,7 @@
 # Ruby Heaps
 
+![The Ruby Heap](assets/img/data-heap_structure.png)
+
 There are two heaps. the `eden` heap and the `tomb` heap. Each heap consists of
 `pages` (see [[ruby-heap-pages]]) each page holds [[rvalue]] objects.
 
