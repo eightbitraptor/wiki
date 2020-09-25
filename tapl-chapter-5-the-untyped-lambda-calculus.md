@@ -23,7 +23,7 @@ languages, are they all just varying complexity implementatins of LC?
 Take for example a factorial functin:
 
 ```
-int factorial(int x) {
+int factorial(int n) {
   if (n == 0) return 1;
   return (n * factorial(n-1));
 }
