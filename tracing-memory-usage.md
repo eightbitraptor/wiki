@@ -15,3 +15,4 @@ the man page says
 
 ```
 MallocStackLoggingNoCompact=1 ruby
+```

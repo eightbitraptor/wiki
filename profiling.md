@@ -1,5 +1,6 @@
 # Profiling
 
+## gperftools
 ```
 brew install gperftools graphviz
 ```
@@ -58,3 +59,42 @@ need.
    --collapsed         Generate collapsed stacks for building flame graphs
                        (see http://www.brendangregg.com/flamegraphs.html)
 ```
+
+## Coz the causal profiler
+
+Install in Ubuntu - clone from master, the packaged one is old.
+
+Follow the instructions in the readme except:
+
+```
+CXXFLAGS=-D_GLIBCXX_USE_CXX11_ABI=0 cmake ..
+```
+
+also make sure to change the permissions for `perf`
+
+```
+sudo sh -c "echo 2 > /proc/sys/kernel/perf_event_paranoid "
+```
+
+Then: compile Ruby with:
+
+```
+export debugflags='-ggdb3'
+export optflags='-O3 -DRGENGC_CHECK_MODE=0 -DRGENGC_DEBUG=0 -DVM_CHECK_MODE=0'
+export cppflags="-DUSE_RVARGC=0 -ldl"
+```
+
+Also don't enable shared libraries or Coz won't be able to find your code.
+
+Then use the macros `COZ_PROGRESS`, `COZ_PROGRESS_NAMED` to measure throughput and `COZ_BEGIN`, `COZ_END` to measure latency.
+
+Run like
+
+```
+coz run -s "%gc.c" --- $HOME/.rubies/rvargc/bin/ruby bin/bench
+```
+
+The `-s` restricts the coz testing to only one file, `%` is a wildcard.
+
+This generates a `profile.coz`. Drop that file into [https://plasma-umass.org/coz/]
+
