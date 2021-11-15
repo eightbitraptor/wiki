@@ -4,7 +4,9 @@ Here are some things I've learned about using the `lldb` debugger.
 
 ## Getting started
 
-Always compile Ruby with `-g -O0` (see [[building-ruby]]).
+Always compile Ruby with `-g -O0` (see [[building-ruby]]). This disables
+optimisations and compiles with debug information so that stacktraces are much
+more easily readable.
 
 When you're in the `lldb` shell. start the process with `process launch`, or
 `run`, or `r`. This will run until the end (or a crash or breakpoint).
@@ -28,13 +30,23 @@ It also pulls in the Ruby lldb helpers which gives you `rp` which allows you to
 print out detailed information about any `VALUE` pointer's by checking the type
 of the data referenced by the pointer and then interpreting the struct.
 
+Some of the functions I use most often defined in the `lldb` ruby helpers are:
+
+* `dump_page` - takes an address of a heap page as an argument and dumps a list
+  of the contents of every slot on that page
+* `dump_page_rvalue` - same as the above but takes an `RVALUE *` and dumps the
+  page containing that `RVALUE`
+* `heap_page` - takes either an `RVALUE *` or a `heap_page *` as argument and
+  prints out information about the page. Basically finds and dereferences a
+  `heap_page *`
+
 ## basic navigation
 
 - most things can be abbreviated, `b == breakpoint`, `f == frame` etc
 - `bt` prints the backtrace
 - `frame n` where `n` is an integer, jumps to stack frame `n`
 - `frame variable` prints a list of the locals in the current stack frame
-- `source list` shows you where you are
+- `source list` (or just `f`) shows you where you are
 
 ## setting breakpoints
 
@@ -47,7 +59,6 @@ But these can be abbreviated to
 
 - `b some_function_name`
 - `b io.c:1234`
-
 
 ## running expressions
 

@@ -15,10 +15,59 @@ From fastest (least coverage) to slowest (most coverage), these are:
 
 ## Running specific tests
 
-You can run a single test file with
+You can run selected test files using make directly. It will run the tests in
+the order you specify
 
 ```
-make test-all TESTS=/path/to/test/file.rb
+make path/to/test/file.rb path/to/another/test.rb
+```
+
+## TESTOPTS and RUN_OPTS
+
+You can configure what `make` runs by setting some environment variables. When
+you run the tests `make` builds a command to run that consists broadly of three
+parts: A ruby interpreter, a wrapper script to run ruby with a set
+configuration, and a test runner that calls the ruby wrapper script to run tests
+with the specified ruby configuration. Each level can be modified:
+
+* `TESTS` - the list of tests to run
+* `TESTOPTS` - the options to pass through to the test runner
+* `RUNRUBYOPT` - the options to pass through to the wrapper script
+* `RUN_OPTS` - the options to pass through the the underlying `ruby` command
+
+I have no idea where to find a comprehensive list of what options can be used, I
+suspect that I'll be discovering new things forever. But here is a useful
+command pulled from my shell history:
+
+```
+make test-all TESTOPTS="-v --seed=7791" RUNRUBYOPT="--debugger=lldb"
+```
+
+This says: run all the tests in single threaded mode (`-v`), in a specific order
+(`--seed`) and using the `lldb` debugger, so I can step through a crash.
+
+## Excluded tests
+
+Ruby excludes some tests from all runs, whether locally or on Github Actions CI.
+You can see this whenever you run the tests and it shows the following run
+command
+
+```
+❯ make test-all
+Run options:
+  --seed=59041
+  "--ruby=./miniruby -I./lib -I. -I.ext/common  ./tool/runruby.rb --extout=.ext  -- --disable-gems"
+  --excludes-dir=./test/excludes
+  --name=!/memory_leak/
+```
+
+The last part `--name=!/memory_leak/` is the interesting part - Ruby doesn't run
+any test containing `memory_leak` in it's name by default! If you're actually
+trying to run (or write) the memory leak tests you can clear the excludes list
+using `TEST_EXCLUDES`
+
+```
+make test/ruby/test_class.rb TEST_EXCLUDES=""
 ```
 
 You can also Run tests using the debugger [[debugging]]

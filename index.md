@@ -24,7 +24,6 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[CRuby development]] - Notes on the structure and implementaton of Matz Ruby
   Interpreter, the canonical implementation of the [Ruby programming
   language](https://www.ruby-lang.org)
-* [[DTrace]] - more crazy
 * [[Allocation tracking]] - Some ways to track memory allocations
 
 ### Other stuff

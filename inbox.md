@@ -6,7 +6,7 @@ the other case is part of incremental gc, when you add a child to an object that
 
 RVALUE_WB_UNPROTECTED - write barrier unprotected
 
-freee poages pages where we have one or more free slots
+free poages pages where we have one or more free slots
 
 heaps free list will point to all the free slots in teh page that we're
 currently using, so when we move a page into the using page, we move it's
