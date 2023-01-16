@@ -1,4 +1,4 @@
-**# eightbitraptor[wiki]
+# eightbitraptor[wiki]
 
 ## What is this?
 
@@ -19,6 +19,7 @@ my primary site/blog](https://www.eightbitraptor.com).
 
 ## Index
 
+### Dev Notes
 * [[C development]] - Things I've learned about writing C, as well as workflows
   and tooling that help me write and debug code in reasonably large codebases.
 * [[CRuby development]] - Notes on the structure and implementaton of Matz Ruby
@@ -36,7 +37,7 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[Mathematical notation]] - I always get stuck with notation, here's a
   glossary of stuff I've run into
 
-### Book Notes
+### Books
 
 * [[The Garbage Collection Handbook]] - The art of automatic memory management
   (Richard Jones, Antony Hosking, Eliot Moss)
