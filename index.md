@@ -19,6 +19,9 @@ my primary site/blog](https://www.eightbitraptor.com).
 
 ## Index
 
+### Dev Log
+* [[2023]]
+
 ### Dev Notes
 * [[C development]] - Things I've learned about writing C, as well as workflows
   and tooling that help me write and debug code in reasonably large codebases.
