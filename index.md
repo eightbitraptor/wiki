@@ -18,12 +18,12 @@ internet. You can read more about me, and also longer articles that I write [on
 my primary site/blog](https://www.eightbitraptor.com).
 
 ### Dev Notes
-* [[C development]] - Things I've learned about writing C, as well as workflows
+* [[C-development]] - Things I've learned about writing C, as well as workflows
   and tooling that help me write and debug code in reasonably large codebases.
-* [[CRuby development]] - Notes on the structure and implementaton of Matz Ruby
+* [[CRuby-development]] - Notes on the structure and implementaton of Matz Ruby
   Interpreter, the canonical implementation of the [Ruby programming
   language](https://www.ruby-lang.org)
-* [[Allocation tracking]] - Some ways to track memory allocations
+* [[Allocation-tracking]] - Some ways to track memory allocations
 * [[MMTk]] - Notes about the Memory Management Toolkit and it's Ruby binding
   (these are very raw and probably not useful)
 
@@ -32,13 +32,11 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[vim-tags-and-navigation]] - Navigating a codebase in Vim
 * [[vim-buffer-management]] - How I edit multiple files in vim (without tabs
   because I hate the UI)
-* [[Mathematical notation]] - I always get stuck with notation, here's a
+* [[Mathematical-notation]] - I always get stuck with notation, here's a
   glossary of stuff I've run into
 
 ### Books
 
-* [[The Garbage Collection Handbook]] - The art of automatic memory management
+* [[The-Garbage-Collection-Handbook]] - The art of automatic memory management
   (Richard Jones, Antony Hosking, Eliot Moss)
-* [[Types and Programming Languages]] (Benjamin C. Pearce)
-
-
+* [[Types-and-Programming-Languages]] (Benjamin C. Pearce)
