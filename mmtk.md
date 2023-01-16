@@ -155,4 +155,52 @@ SFTTable? Ok - apparently the sft is defined inside mmtk-core. It's something to
 do with space specific dynamic dispatch.... I'm just going to ignore this for
 now and hope it's not important yet. Good start
 
+Then we build a `GCWorkScheduler`, passing in the number of configured threads
+as a parameter (This is 1 for Ruby).
+
+Then we build a plan. VSCode is type annotating this let binding as `Box<dyn
+Plan<VM = VM>>` and I don't know what this means. but it uses a factory method
+on the plan module: `crate::plan::create_plan`.
+
+Then we `VM_MAP.boot()`. What is `VM_MAP` (a global `VMMap` that manages the
+mapping of spaces to virtual memory ranges). I've seen spaces referenced before
+- this is an MMTk concept, but what is it.
+
+### spaces
+
+What are spaces? They're mentioned in `Cargo.toml` which is surprising to me.
+The main source file seems to be `lib/policy/space.rs`. I'm pretty sure this is
+going to be where the heap is allocated.
+
+These look like the main memory spaces. They're set up and defined by the Plans
+I think.
+
+
+# What happens when a Ruby Object is allocated?
+
+Starting in `newobj_init0`. This code could do with being refactored a bit, but
+it looks like we calculate which size pool an object belongs in and then we call `mmtk_alloc`.
+
+We pass in `GET_THREAD()->mutator` - this is a thread on the actual Ruby
+`rb_thread_struct`. It's been added as part of mmtk. This looks to be just an
+MMTk wrapper around the current Ruby thread.
+
+We also pass in the slot size we want to allocate (MMTk is still dealing with
+slot sizes I think, and not specifically object sizes).
+
+** NOTE ** Wait. What does MMTk do with the actual object data? is it still
+using malloc and heap allocating strings and shit? I think we need to replace
+ruby_xmalloc etc with mmtk variants.
+
+The allocation size it uses is the size of the slot, plus and prefix and suffix.
+It stores the size pool size in the prefix and returns the offset address for
+the actual pointer to the `VALUE`.
+
+Then we call `mmtk_post_alloc` which I'm not sure what this does. First lets
+look at `mmtk_alloc`.
+
+** `mmtk_alloc`
+
+
+
 
