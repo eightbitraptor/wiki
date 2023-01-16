@@ -17,11 +17,6 @@ built on VSCode](https://foambubble.github.io/foam/).
 internet. You can read more about me, and also longer articles that I write [on
 my primary site/blog](https://www.eightbitraptor.com).
 
-## Index
-
-### Dev Log
-* [[2023]]
-
 ### Dev Notes
 * [[C development]] - Things I've learned about writing C, as well as workflows
   and tooling that help me write and debug code in reasonably large codebases.
