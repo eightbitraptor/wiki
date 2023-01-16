@@ -3,10 +3,14 @@
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
-  "workbench.colorTheme": "Night Owl",
   "[markdown]": {
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
+  "workbench.colorTheme": "Gray Matter Dark",
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync"
 }
