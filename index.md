@@ -34,6 +34,9 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[Mathematical-notation]] - I always get stuck with notation, here's a
   glossary of stuff I've run into
 
+### Language learning
+* [[japanese]]
+
 ### Books
 
 * [[The-Garbage-Collection-Handbook]] - The art of automatic memory management
