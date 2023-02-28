@@ -27,7 +27,7 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[MMTk]] - Notes about the Memory Management Toolkit and it's Ruby binding
   (these are very raw and probably not useful)
 
-### Other stuff
+### Other tech stuff
 * [[vim-tags-and-navigation]] - Navigating a codebase in Vim
 * [[vim-buffer-management]] - How I edit multiple files in vim (without tabs
   because I hate the UI)
