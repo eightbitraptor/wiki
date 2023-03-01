@@ -1,7 +1,10 @@
 ---
----
 
 @import "{{ site.theme }}";
+
+body {
+  background-color: #21202c;
+}
 
 a {
   color: #3300ff;
