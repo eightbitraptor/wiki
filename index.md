@@ -26,6 +26,9 @@ my primary site/blog](https://www.eightbitraptor.com).
 * [[Allocation-tracking]] - Some ways to track memory allocations
 * [[MMTk]] - Notes about the Memory Management Toolkit and it's Ruby binding
   (these are very raw and probably not useful)
+* [[garbage-collection]] - A hub for notes about GC in a more general sense. Ruby specific GC stuff is likely in [[cruby-development]].
+* [[glossary]] - I run into terms all the time that I don't know what they mean.
+  Here's where I'm going to collect a few of them and try and keep track.
 
 ### Other tech stuff
 * [[vim-tags-and-navigation]] - Navigating a codebase in Vim
@@ -52,6 +55,7 @@ my primary site/blog](https://www.eightbitraptor.com).
 [CRuby-development]: cruby-development "CRuby Development"
 [Allocation-tracking]: allocation-tracking "Allocation Tracking"
 [MMTk]: mmtk "MMTk"
+[glossary]: glossary "Glossary"
 [vim-tags-and-navigation]: vim-tags-and-navigation "Vim Tags and Navigation"
 [vim-buffer-management]: vim-buffer-management "Vim Buffer Management"
 [Mathematical-notation]: mathematical-notation "Mathematical Notation"
