@@ -55,6 +55,8 @@ my primary site/blog](https://www.eightbitraptor.com).
 [CRuby-development]: cruby-development "CRuby Development"
 [Allocation-tracking]: allocation-tracking "Allocation Tracking"
 [MMTk]: mmtk "MMTk"
+[garbage-collection]: garbage-collection "Garbage Collection"
+[cruby-development]: cruby-development "CRuby Development"
 [glossary]: glossary "Glossary"
 [vim-tags-and-navigation]: vim-tags-and-navigation "Vim Tags and Navigation"
 [vim-buffer-management]: vim-buffer-management "Vim Buffer Management"
