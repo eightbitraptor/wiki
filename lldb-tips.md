@@ -1,8 +1,8 @@
-# Lldb Tips
+## Lldb Tips
 
 Here are some things I've learned about using the `lldb` debugger.
 
-## Getting started
+### Getting started
 
 Always compile Ruby with `-g -O0` (see [[building-ruby]]). This disables
 optimisations and compiles with debug information so that stacktraces are much
@@ -14,7 +14,7 @@ When you're in the `lldb` shell. start the process with `process launch`, or
 You can tell lldb to stop at the beginning of the program by using
 `--stop-at-entry` as an argument to the run command
 
-## config
+### config
 
 Add this to your `~/.lldbinit`
 
@@ -60,7 +60,7 @@ But these can be abbreviated to
 - `b some_function_name`
 - `b io.c:1234`
 
-## running expressions
+### running expressions
 
 You can run expressions using `expr` or `p`. This is useful to look at
 variables, or check truthiness of stuff.
@@ -100,7 +100,7 @@ You can refer to them again in other expressions.
 (bool) $10 = true
 ```
 
-## Inspecting CRuby objects
+### Inspecting CRuby objects
 
 Here is an example of dealing with `VALUE` objects and inspecting internal Ruby
 structures in `lldb`: [[ruby-inspecting-structs-lldb]]

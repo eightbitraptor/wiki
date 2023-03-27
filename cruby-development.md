@@ -1,4 +1,4 @@
-# CRuby Development
+## CRuby Development
 
 * [[building-ruby]] - Get the source and configure your build environment
 

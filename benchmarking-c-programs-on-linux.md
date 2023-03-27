@@ -1,4 +1,4 @@
-# Benchmarking C programs on linux
+## Benchmarking C programs on linux
 
 Here are some things to do to reduce variance when attempting to run benchmarks
 on Linux.

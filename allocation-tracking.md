@@ -1,4 +1,4 @@
-# Allocation Tracking
+## Allocation Tracking
 
 **Goal:** To track allocations's happening during the lifetime of a Ruby process.
 

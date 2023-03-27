@@ -1,6 +1,6 @@
-# Garbage Collection
+## Garbage Collection
 
-## Tracing GC's
+### Tracing GC's
 
 These are collectors that use reachability to determine liveness. Tracing the
 transitive closure of the object graph to determine reachability.
@@ -37,7 +37,7 @@ object is reclaimed. Reference counting is fast, but naive, it can't cope with
 circular references, and is often used in conjunction with a tracing collector,
 for some specific purposes.
 
-## Immix
+### Immix
 
 Immix is a GC algorithm developed by Steve Blackburn and Kathryn McKinley and
 presented in the paper [Immix: a mark-region garbage collector with space

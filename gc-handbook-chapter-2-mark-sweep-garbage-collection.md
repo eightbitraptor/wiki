@@ -1,4 +1,4 @@
-# Mark-sweep Garbage Collection
+## Mark-sweep Garbage Collection
 
 All GC schemes are based on one of four fundamental approaches
 

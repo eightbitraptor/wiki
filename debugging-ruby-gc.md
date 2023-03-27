@@ -1,9 +1,9 @@
-# Debugging Ruby GC
+## Debugging Ruby GC
 
 Most of the stuff in [[debugging]] also applies but there are some specific
 things that can help out when debugging the GC
 
-## Custom info from weird parts of the code
+### Custom info from weird parts of the code
 
 There's a common pattern of printing to `stderr` by doing
 
@@ -16,7 +16,7 @@ This is particularly prevalent around the GC and the VM code.
 If you want to see what the output is, just change the `0` to `1` and then
 recompile and rerun.
 
-## `GC_DEBUG`
+### `GC_DEBUG`
 
 Enable by editing the `Makefile` and adding `-DGC_DEBUG` to the `debugflags`
 
@@ -27,7 +27,7 @@ This is added in `gc.c` during the `newobj_init` function.
 
 It's also used during `gc_mark_children`
 
-## `RGENGC_DEBUG`
+### `RGENGC_DEBUG`
 
 Enable by editing the `Makefile` and adding `-DRGENGC_DEBUG=<n>` to the
 `debugflags`

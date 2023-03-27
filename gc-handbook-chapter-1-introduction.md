@@ -1,6 +1,6 @@
-# GC Handbook - Chapter 1: Introduction
+## GC Handbook - Chapter 1: Introduction
 
-## Terminology and Notation
+### Terminology and Notation
 
 - The heap: A contiguouos array of memory words, or a set of discontiguous
   blocks of contiguouos words (ie. the heap may or may not be organised into a
@@ -20,14 +20,14 @@ For Ruby, this probably means that VALUE is a granule, RVALUE is a cell, and it
 may be allocated as various types of object (RString, RClass etc) which would be
 the Objects.
 
-## Mutator/collector
+### Mutator/collector
 
 - Mutator is the thread/s that execute application code, allocate objects, and
   mutate references
 - the collector, executes GC code, free's storage occupied by unreachable
   objects
 
-## Mutator roots
+### Mutator roots
 
 This is different to the set of root objects. It is
 
@@ -40,7 +40,7 @@ mutator roots.
 In practice, this is normally global state, thread local storage (such as
 execution stacks), that contains pointers to things on the heap.
 
-## References
+### References
 
 ```
 Pointers(N) = { a | a = &N[i]; ∀i: 0 ≤ i < |N| where N[i] is a pointer}
@@ -52,7 +52,7 @@ that are part of the array, where the contents of the field is a pointer.
 Basically: references are all the fields of an object that are pointers to other
 things.
 
-## Liveness
+### Liveness
 
 An object is live if the mutator will access it in the future. This is [an
 undecidable problem](https://en.wikipedia.org/wiki/Undecidable_problem).

@@ -1,6 +1,6 @@
-# Mathematical Notation
+## Mathematical Notation
 
-## Set builder
+### Set builder
 - `{}` - A set literal
 - `|` - such that
 - `∀` - For all
@@ -9,6 +9,6 @@
 - `∃` - There exists
 
 
-## Logical operators
+### Logical operators
 
 - `∨` - logical OR.

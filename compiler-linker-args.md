@@ -1,4 +1,4 @@
-# Compiler & Linker Arguments
+## Compiler & Linker Arguments
 
 ## Passing linker arguments using Autotools
 

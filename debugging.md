@@ -1,4 +1,4 @@
-# Debugging
+## Debugging
 
 ## Running arbitrary scripts
 
@@ -15,7 +15,7 @@ then after you've build.
 - `make gdb` - runs `test.rb` with `miniruby` through the `gdb` debugger (I don't use this)
 - `make lldb-ruby` - runs `test.rb` with `ruby` through the `lldb` debugger
 
-## Running a specific test and attaching `lldb`
+### Running a specific test and attaching `lldb`
 
 You can add `RUNRUBYOPT` to any test run command (see [[running-tests]]). An
 example:
@@ -29,7 +29,7 @@ Then when you get the `lldb` prompt type `process launch` or `run` to start debu
 also see [[lldb-tips]] and [[ruby-inspecting-structs-lldb]] for information
 about how to use `lldb` effectively in CRuby.
 
-## Ruby devel logs
+### Ruby devel logs
 
 There are a few options and config flags that can be used to make Ruby log a lot
 of output about what the VM is doing.

@@ -1,9 +1,9 @@
-# Glossary
+## Glossary
 
 Tech terms that I run into a lot, that I have to look up. When I look them up,
 I'll write them down here.
 
-## Transitive closure
+### Transitive closure
 
 A transitive closure is the full set of all the possible connections or
 relationships between elements of a set.
@@ -16,7 +16,7 @@ that contains not just these relationships, but also the indirect relationship
 This is referred to a lot when we talk about tracing GC's. ie. Anything
 reachable from a reachable object is itself reachable.
 
-## Tracing
+### Tracing
 
 The process of walking the transitive closure of the object graph, starting from
 some known roots, in order to determine which objects are reachable (and

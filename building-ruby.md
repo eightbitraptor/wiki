@@ -1,4 +1,4 @@
-# Building Ruby
+## Building Ruby
 
 Lots of good resources into how we can build Ruby in [Koichi's Ruby Hack
 challenge](https://github.com/ko1/rubyhackchallenge).

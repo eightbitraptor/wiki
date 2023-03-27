@@ -1,4 +1,4 @@
-# MMTk
+## MMTk
 
 MMTk starts in `rb_objspace_alloc` in gc.c. Weirdly it initialises the builder
 object after the call to `calloc` to allocate Ruby's objectspace. I thought mmtk
@@ -18,7 +18,7 @@ It then does a few things
   results of `rb_mmtk_heap_limit`)
 - `mmtk_init_binding` (not sure what this does yet).
 
-## `mmtk_builder_default`
+### `mmtk_builder_default`
 
 This is defined in `lib/api.rs` inside the Ruby bindings and creates a reference
 to an `MMTKBuilder` object (using `Box`), which it then converts into a raw pointer.
@@ -34,7 +34,7 @@ does is call `new` on the default impl. `new` just creats a struct of
 `MMTkBuilder`, with a default `Options` instance - so not much interesting happening
 here.
 
-## `mmtk_builder_set_plan`
+### `mmtk_builder_set_plan`
 
 This is again in the Ruby binding layer `lib/api.rs`. This reads the plan name
 we set from the command line option (`NoGC` or `MarkSweep`), and does what looks
@@ -48,7 +48,7 @@ _butterfly meme:_ is this metaprogramming?
 
 then it just assigns the plan name to the options in the `MMTk_Builder` object that we built.
 
-## `rb_mmtk_heap_limit`
+### `rb_mmtk_heap_limit`
 
 This is fully implemented inside Ruby - specifically in `gc.c`
 
@@ -66,7 +66,7 @@ if nothing was passed then `is_dynamic_heap` is set to `true`. At this point min
 max are set to the default values (10Mb and 80% of the computers physical memory
 respectively)
 
-## `mmtk_builder_set_{dynamic,fixed}_heap_size`
+### `mmtk_builder_set_{dynamic,fixed}_heap_size`
 
 These are functions in the ruby binding layer that set a gc_trigger on the
 options inside the builder
@@ -77,7 +77,7 @@ respectively.
 All this stuff is essentially just setting options on the Ruby heap though -
 where is the actual heap allocation happening?
 
-## `mmtk_init_binding`
+### `mmtk_init_binding`
 
 this function consumes the `MMTk_Builder` object - but it's return void. so what's
 happening - does it replace the target of the pointer? it's defined in the Ruby
@@ -119,7 +119,7 @@ just an MMTk object that's used within the binding and MMTk core right?
 Ok, so BINDING is a global, and we set an instance of the Ruby Binding into it,
 and then unwrap it because reasons.
 
-## mmtk_init
+### mmtk_init
 
 Ok, so now we know how the builder is initialized and builds an MMTk instance we
 should look into how the MMTk system is actually being initialized.
@@ -141,12 +141,12 @@ another type alias for UnimplementedMemorySlice.
 aside from some logger shenanigans, this just calls back into builder.build and
 then boxes the result.
 
-## MMTKBuilder::build
+### MMTKBuilder::build
 
 straight up does MMTK::new passing in a reference counted clone of the options
 struct (using Arc).
 
-## MMTK::new
+### MMTK::new
 
 Ok, now we're getting somewhere.
 
@@ -176,7 +176,7 @@ These look like the main memory spaces. They're set up and defined by the Plans
 I think.
 
 
-# What happens when a Ruby Object is allocated?
+## What happens when a Ruby Object is allocated?
 
 Starting in `newobj_init0`. This code could do with being refactored a bit, but
 it looks like we calculate which size pool an object belongs in and then we call `mmtk_alloc`.

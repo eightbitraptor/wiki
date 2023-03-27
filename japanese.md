@@ -1,6 +1,6 @@
-# Japanese
+## Japanese
 
-## Particles
+### Particles
 
 Particles are the connecting words, that usually indicate the relationship
 between a noun and a verb. There are loads. Here are the ones I've learned so
