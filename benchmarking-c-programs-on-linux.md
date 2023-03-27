@@ -59,3 +59,16 @@ sudo cgexec -g cpuset:singlecpu sudo -umattvh fish
 ```
 
 Note the nested sudo, otherwise fish will start in the root env.
+
+## Disable ASLR
+
+Address Space Layout Randomisation, is a kernel security feature that randomises
+the memory space of each process. Good for security, bad for benchmarking
+consistency because it'll completely change the cache performance.
+
+```
+echo 0 | tee /proc/sys/kernel/randomize_va_space
+```
+
+You can make the change permanent in sysctl too, but probably shouldn't, it's a
+security risk.
