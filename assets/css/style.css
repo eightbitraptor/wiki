@@ -1,18 +1,20 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-family:  'JetBrains Mono NL', Menlo, Consolas, Ubuntu Mono, monospace;
+  font-size: 1.1rem;
+  line-height: 1.54;
+  letter-spacing: -0.02em;
   background-color: #21202c;
   color: white;
 }
 
-.what-the-fuck {
-  color: fuscia;
-}
-
 a {
-  color: #3300ff;
+  color: #ee72f1;
 }
 
 .markdown-body {
-  max-width: 800px;
+  max-width: 1200px;
   font-size: 16px;
 }
 
