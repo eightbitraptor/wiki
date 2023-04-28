@@ -29,9 +29,11 @@ A list of resources I used when writing my talk about Plug & Play Garbage Collec
 
 ### People
 
-Massive thanks to Steve Blackburn and Kunshan Wang, both part of the MMTk team
+Thanks to Steve Blackburn and Kunshan Wang, both part of the MMTk team
 at the Australian National University who are working on the Ruby/MMTk
 integration.
+
+Thanks to my wife, for letting me practice this talk at her, and helping me edit and tell a coherant story..
 
 And thanks to Chris Seaton. He is missed.
 
