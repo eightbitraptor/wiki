@@ -26,6 +26,7 @@ A list of resources I used when writing my talk about Plug & Play Garbage Collec
 
 * [MMTk core](https://github.com/mmtk/mmtk-core)
 * [MMTk Ruby bindings](https://github.com/mmtk/mmtk-ruby)
+* [MMTk Nightly builder](https://github.com/Shopify/ruby-mmtk-builder)
 
 ### People
 
