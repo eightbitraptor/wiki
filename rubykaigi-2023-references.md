@@ -34,7 +34,7 @@ Thanks to Steve Blackburn and Kunshan Wang, both part of the MMTk team
 at the Australian National University who are working on the Ruby/MMTk
 integration.
 
-Thanks to my wife, for letting me practice this talk at her, and helping me edit and tell a coherant story..
+Thanks to my wife, for practicing this talk with me, and helping me edit and tell a coherant story..
 
 And thanks to Chris Seaton. He is missed.
 
